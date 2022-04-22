@@ -4,4 +4,8 @@ echo 'export ALCHEMY='$ALCHEMY >> $HOME/.bash_profile
 wget -O starknet.sh https://api.nodes.guru/starknet.sh && chmod +x starknet.sh && ./starknet.sh
 Node verification
 service starknetd status
-Useful Commands 
+Useful Commands:
+  View logs:
+journalctl -u starknetd -f
+  Node restart:
+systemctl restart starknetd
